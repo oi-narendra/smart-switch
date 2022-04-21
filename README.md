@@ -23,5 +23,26 @@ SmartSwitch(
           activeColor: Colors.green,
           inActiveColor: Colors.red,
           defaultActive: true,
+          onChanged: (value) {
+            debugPrint('value: $value');
+          },
         ),
 ```
+
+## Parameters
+
+    * size: SwitchSize
+        * small
+        * medium
+        * large
+        * default: medium
+    * disabled: bool
+        * default: false
+    * activeColor: Color
+        * default: Theme.of(context).primaryColor
+    * inActiveColor: Color
+        * default: Colors.grey.shade400
+    * defaultActive: bool
+        * default: true
+    * onChanged: (bool value)
+        * default: null

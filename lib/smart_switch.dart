@@ -8,6 +8,7 @@ class SmartSwitch extends StatefulWidget {
   final Color? inActiveColor;
   final bool disabled;
   final bool defaultActive;
+  final Function(bool)? onChanged;
   const SmartSwitch({
     Key? key,
     this.size = SwitchSize.medium,
@@ -15,6 +16,7 @@ class SmartSwitch extends StatefulWidget {
     this.activeColor,
     this.disabled = false,
     this.defaultActive = true,
+    this.onChanged,
   }) : super(key: key);
 
   @override
@@ -68,6 +70,9 @@ class _SmartSwitchState extends State<SmartSwitch> {
             setState(() {
               _active = !_active;
             });
+            if (widget.onChanged != null) {
+              widget.onChanged!(_active);
+            }
           },
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 300),

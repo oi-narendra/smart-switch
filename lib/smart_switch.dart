@@ -2,13 +2,13 @@ library smart_switch;
 
 import 'package:flutter/material.dart';
 
-class MySwitch extends StatefulWidget {
+class SmartSwitch extends StatefulWidget {
   final SwitchSize size;
   final Color? activeColor;
   final Color? inActiveColor;
   final bool disabled;
   final bool defaultActive;
-  const MySwitch({
+  const SmartSwitch({
     Key? key,
     this.size = SwitchSize.medium,
     this.inActiveColor,
@@ -18,10 +18,10 @@ class MySwitch extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<MySwitch> createState() => _MySwitchState();
+  State<SmartSwitch> createState() => _SmartSwitchState();
 }
 
-class _MySwitchState extends State<MySwitch> {
+class _SmartSwitchState extends State<SmartSwitch> {
   bool _active = true;
   double _y = -0.4;
   double _opacity = 0.0;

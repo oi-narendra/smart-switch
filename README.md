@@ -31,18 +31,12 @@ SmartSwitch(
 
 ## Parameters
 
-    * size: SwitchSize
-        * small
-        * medium
-        * large
-        * default: medium
-    * disabled: bool
-        * default: false
-    * activeColor: Color
-        * default: Theme.of(context).primaryColor
-    * inActiveColor: Color
-        * default: Colors.grey.shade400
-    * defaultActive: bool
-        * default: true
-    * onChanged: (bool value)
-        * default: null
+    | Parameter | Type | Default | Description |
+    | --------- | ---- | ------- | ----------- |
+    | size | SwitchSize | SwitchSize.medium | The size of the switch. |
+    | disabled | bool | false | Whether the switch is disabled. |
+    | activeColor | Color | Colors.green | The color of the active switch. |
+    | inActiveColor | Color | Colors.red | The color of the inactive switch. |
+    | defaultActive | bool | true | Whether the switch is active by default. |
+    | onChanged | Function(bool) | null | The callback for when the switch changes. |
+

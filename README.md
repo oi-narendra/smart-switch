@@ -14,6 +14,12 @@ and the Flutter guide for
 
 A smart switch for you.
 
+## Screenshots
+
+[<img src="../smart_switch/screenshots/smart_switch.gif" width="300"/>](smart_switch.gif)
+
+<!-- [![screenshot](screenshots/smart_switch.gif)](screenshots/smart_switch.gif)  -->
+
 ## Usage
 
 ```dart

@@ -14,7 +14,7 @@ and the Flutter guide for
 
 A smart switch for you.
 
-## Screenshots
+## Preview
 
 [<img src="screenshots/smart_switch.gif" width="300"/>](smart_switch.gif)
 
